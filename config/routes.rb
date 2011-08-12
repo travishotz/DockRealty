@@ -1,8 +1,10 @@
 Dockrealty::Application.routes.draw do
-  get "pages/home"
-  get "pages/terms"
-  get "pages/contact"
+  
+  match '/contact', :to => 'pages#contact'
+  match '/terms',  :to => 'pages#terms'
 
+  root :to => 'pages#home'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
