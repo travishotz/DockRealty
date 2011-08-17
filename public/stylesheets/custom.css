@@ -1,24 +1,29 @@
 .container {
-  width: 710px;
+  width: 810px;
 }
 
 body {
-  background: red;
+  background: white;
 }
 
 header {
-  padding-top: 20px;
+/*	text-align: center;*/
+  padding-top: 10px;
+  text-align: center;
 }
 
 header img {
   padding: 1em;
-  background: #fff;
+  background: white;
 }
 
+header a {
+	color: white;
+}
 footer {
   text-align: center;
   margin-top: 10px;
-  width: 710px;
+  width: 810px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -27,16 +32,21 @@ footer nav {
   float: none;
 }
 
+footer a {
+	color: white;
+}
+
 section {
   margin-top: 1em;
-  font-size: 120%;
+  font-size: 110%;
   padding: 20px;
   background: #fff;
 }
 
 section h1 {
-  font-size: 200%;
+  font-size:125%;
 }
+
 
 /* Navigation */
 
@@ -45,7 +55,7 @@ nav {
 }
 
 nav {
-  background-color: white;
+  background-color: red;
   padding: 0 0.7em;
   white-space: nowrap;
 }
@@ -67,7 +77,7 @@ nav ul li a {
 }
 
 nav ul li a:visited {
-  color: red;
+  color: white;
 }
 
 nav ul li a:hover {
@@ -83,12 +93,12 @@ a {
 }
 
 a:hover {
-  color: #069;
+  color: black;
   text-decoration: underline;
 }
 
 a:visited {
-  color: #069;
+  color: black;
 }
 
 /* Round corners */

@@ -2,6 +2,8 @@ Dockrealty::Application.routes.draw do
   
   match '/contact', :to => 'pages#contact'
   match '/terms',  :to => 'pages#terms'
+  match '/privacy', :to => 'pages#privacy'
+  match '/history', :to => 'pages#history'
 
   root :to => 'pages#home'
   

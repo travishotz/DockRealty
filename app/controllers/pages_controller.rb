@@ -10,4 +10,13 @@ class PagesController < ApplicationController
   def terms
     @title = "Terms of Use"
   end
+  
+  def privacy
+    @title = "Privacy Policy"
+  end
+  
+  def history
+    @title = "History"
+  end
+  
 end
