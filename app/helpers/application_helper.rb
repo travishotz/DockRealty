@@ -7,4 +7,11 @@ module ApplicationHelper
       "#{base_title} | #{@title}"
     end
   end
+  # 
+  # def email
+  #   base_email = "@dockrealty.com"
+  #     if @email.nil?
+  #       "info + #{base_email}""
+  #     else
+  #      "#{base_title} | #{@title}"
 end

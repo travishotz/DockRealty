@@ -70,5 +70,18 @@ describe PagesController do
                                 :content  => @base_title + " | History")
     end
   end
+  
+  describe "GET 'advertising'" do
+    it "should be successful" do
+    get 'advertising'
+    response.should be_success
+    end
+ 
+    it "should have the right title" do
+      get 'advertising'
+      response.should have_selector("title", 
+                                :content  => @base_title + " | Advertising")
+    end
+  end
 
 end

@@ -1,31 +1,63 @@
 .container {
   width: 810px;
+	background: white;
 }
 
 body {
-  background: white;
+  background-color: #333;
+  border: 3px solid black;
+  width: 810px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;/*
+      	padding: 15px;*/
+	font: 1em Times;
 }
 
 header {
-/*	text-align: center;*/
   padding-top: 10px;
+  border-bottom: 3px solid red;
   text-align: center;
+	width: 810px;
+	
 }
 
 header img {
   padding: 1em;
   background: white;
+	float: left;
 }
 
+header h3 { 
+	font-size: 16px;
+}
+header h3 a {
+	color: red;
+	margin-right: -5px;
+}
 header a {
 	color: white;
 }
+
+.rightborder {
+	float: right;
+	padding: 10px;
+	margin: 2px;
+}
+
+header strong{
+	font: italic bold 70px/1em Tahoma, "Arial Black", Helvetica, sans-serif;
+	color: red;
+/*	margin-right: -2.55em;*/
+}
+
 footer {
   text-align: center;
   margin-top: 10px;
   width: 810px;
   margin-left: auto;
   margin-right: auto;
+  font: 12px Times, serif;
 }
 
 footer nav {
@@ -34,13 +66,18 @@ footer nav {
 
 footer a {
 	color: white;
+	font-size: 16px;
+}
+
+footer img { 
+	padding-top: 16px;
 }
 
 section {
   margin-top: 1em;
   font-size: 110%;
   padding: 20px;
-  background: #fff;
+  background: white;
 }
 
 section h1 {
@@ -51,10 +88,7 @@ section h1 {
 /* Navigation */
 
 nav {
-  float: right;
-}
-
-nav {
+	float: right;
   background-color: red;
   padding: 0 0.7em;
   white-space: nowrap;
@@ -82,6 +116,7 @@ nav ul li a:visited {
 
 nav ul li a:hover {
   text-decoration: underline;
+	color: black;
 }
 
 
@@ -98,7 +133,7 @@ a:hover {
 }
 
 a:visited {
-  color: black;
+  color: red;
 }
 
 /* Round corners */
