@@ -1,0 +1,278 @@
+/*div {
+	outline: 1px dashed red;
+}*/
+/*** GENERAL CSS ***/
+
+body {
+	margin:0;
+	padding:0;
+	width:100%;
+	background:#fff;
+	min-width:820px;		/* Minimum width of layout - remove line if not required */
+					/* The min-width property does not work in old versions of Internet Explorer */
+	font: .9em Palatino, Optima, Times, sans-serif;
+}
+a {
+  color: red;
+  text-decoration: none;
+	font-family: Optima, Arial, serif;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: red;
+}
+
+h1, h2, h3 {
+	margin:.8em 0 .2em 0;
+	padding:0;
+}
+
+h1{
+	font: bold 2.2em Optima, Arial, sans-serif;
+}
+
+h2{
+	font: bold 1.6em Optima, Arial, sans-serif;
+/*	border-bottom: 1px solid #002d4b;*/
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font: bold 1.2em Palatino, Times, serif;
+	margin-top: 20px;
+	margin-bottom: 10px;	
+}
+p {
+	margin: .4em 0 .8em 0;
+	padding: 0;
+}
+
+img {
+	margin: 10px 0 5px;
+}
+
+.center {
+	text-align: center;
+}
+/**Header**/
+
+#header {
+	float:left;
+	width:100%;
+	padding:0;
+	padding-top: 152px;
+	margin:0;/*
+		border-bottom:1px solid black;*/
+	background: url(../images/dr_banner.gif) no-repeat top left;
+}
+
+#header h1  {
+	padding:.2em 15px;
+	margin:0;
+	margin-left: 260px;
+	font-size: 1em;
+  margin-top: -75px;
+}
+#header h2  {
+	padding:. 5px 15px	.5px 15px;
+	margin:0;
+	margin-left: 255px;
+}
+#header a {
+	padding:.5em 15px	.2em 15px;
+	margin:0;
+	margin-left: 345px;
+}
+
+/*** LIQUID THREE COLUMN LAYOUT ***/
+
+#colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+	background: red;		/* Left column background colour */
+}
+#colmid {
+	float:left;
+	width:200%;
+	position:relative;
+	left:200px;
+	background: white;    	/* Centre column background colour */
+}
+#colright {
+	float:left;
+	width:100%;
+	position:relative;
+	left:50%;
+	margin-left:-400px;
+	background: red;    	/* Right column background colour */
+}
+#col1wrap {
+	float:right;
+	width:50%;
+	position:relative;
+	right:100%;
+}
+
+#col1pad {
+	margin:0 15px 0 415px;
+	overflow:hidden;
+}
+
+#content {
+	width:100%;
+	overflow:hidden;
+}
+
+/***MainNav***/
+
+#mainNav {
+	float:left;
+	width:170px;
+	position:relative;
+	margin-left:-50%;
+	left:215px;
+	text-align: center;
+}
+
+#mainNav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#mainNav a, #mainNav h2, #mainNav h3{
+	font: bold 1.1em Palatino, helvetica, sans-serif;
+	display: block;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc #888 #555 #bbb;
+	margin: 0;
+	padding: 2px 3px;
+}
+
+#mainNav h2 { 
+	color: white;
+	background: red;
+	text-transform: uppercase;
+}
+
+#mainNav a, #mainNav h3{
+	color: black;
+	background: white;
+	text-decoration: none;
+}
+
+#mainNav a:hover, #mainNav h3:hover {
+	color: white;
+	background: red;
+}
+
+#mainNav li {
+	position: relative;
+}
+
+#mainNav ul ul ul {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100%;
+}
+
+div#mainNav ul ul ul, div#mainNav ul ul li:hover ul ul {
+	display: none;
+}
+
+div#mainNav ul ul li:hover ul,
+div#mainNav ul ul ul li:hover ul {
+	display: block;
+}
+
+#userPanel {
+	float:left;
+	width:170px;
+	position:relative;
+	left:15px;
+	overflow:hidden;
+}
+
+/*** USERPANEL ***/
+
+#userPanel ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#userPanel a {
+	color: #FFF;
+	font: #FFF 1em Times, serif;
+}
+
+#userPanel h1, #userPanel h2 {
+	font: 1.2em Optima, Times, serif;
+}
+
+/*** FOOTER ***/
+
+#footer {
+	clear:both;
+	float:left;
+	width:100%;
+	padding:0;
+	margin:0;/*
+		border-top:1px solid black;*/
+	background: white;
+	text-align: center;
+}
+#footer p {
+	padding:.5em 15px;
+	font-size: .8em;
+}
+
+#footer nav {
+  background-color: red;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+/*** NAVIGATION ***/
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+nav ul li a:visited {
+  color: white;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/*** CLASSES ***/
+
+.floatright {
+	float: right;
+	padding: 10px;
+}

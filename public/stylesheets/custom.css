@@ -1,7 +1,20 @@
-.container {
-  width: 810px;
-	background: white;
+div {
+	outline: 1px dashed red;
 }
+.container {
+	padding: 0 15em 0 13em;
+	width: 810px;
+}
+body {
+	margin:0;
+	padding:0;
+	width:100%;
+	background:#fff;
+	min-width:600px;		/* Minimum width of layout - remove line if not required */
+					/* The min-width property does not work in old versions of Internet Explorer */
+	font: .9em "Century Gothic","Gill Sans",Arial,sans-serif;
+}
+
 
 body {
   background-color: #333;
@@ -9,12 +22,14 @@ body {
   width: 810px;
   margin-top: 20px;
   margin-left: auto;
-  margin-right: auto;/*
-      	padding: 15px;*/
+  margin-right: auto;/*/*/*
+          	padding: 15px;*/*/*/
 	font: 1em Times;
 }
 
-header {
+
+body 
+#header {
   padding-top: 10px;
   border-bottom: 3px solid red;
   text-align: center;
@@ -22,20 +37,20 @@ header {
 	
 }
 
-header img {
+#header img {
   padding: 1em;
   background: white;
 	float: left;
 }
 
-header h3 { 
+#header h3 { 
 	font-size: 16px;
 }
-header h3 a {
+#header h3 a {
 	color: red;
 	margin-right: -5px;
 }
-header a {
+#header a {
 	color: white;
 }
 
@@ -45,9 +60,11 @@ header a {
 	margin: 2px;
 }
 
-header strong{
+header h1 strong{
 	font: italic bold 70px/1em Tahoma, "Arial Black", Helvetica, sans-serif;
 	color: red;
+*/	
+	text-outline: 2px 2px #ff0000;
 /*	margin-right: -2.55em;*/
 }
 
@@ -60,16 +77,16 @@ footer {
   font: 12px Times, serif;
 }
 
-footer nav {
+.footer nav {
   float: none;
 }
 
-footer a {
+.footer a {
 	color: white;
 	font-size: 16px;
 }
 
-footer img { 
+.footer img { 
 	padding-top: 16px;
 }
 
@@ -83,7 +100,7 @@ section {
 section h1 {
   font-size:125%;
 }
-
+*/
 
 /* Navigation */
 
@@ -119,7 +136,7 @@ nav ul li a:hover {
 	color: black;
 }
 
-
+*/
 /* Links */
 
 a {
@@ -134,12 +151,12 @@ a:hover {
 
 a:visited {
   color: red;
-}
+}*/
 
 /* Round corners */
 
-.round {
+/*.round {
   -moz-border-radius:    10px;
   -webkit-border-radius: 10px;
   border-radius:         10px;
-}
+}*/

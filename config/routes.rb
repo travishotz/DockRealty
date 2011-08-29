@@ -4,7 +4,8 @@ Dockrealty::Application.routes.draw do
   match '/terms',  :to => 'pages#terms'
   match '/privacy', :to => 'pages#privacy'
   match '/history', :to => 'pages#history'
-
+  match '/advertising', :to => 'pages#advertising'
+  
   root :to => 'pages#home'
   
   # The priority is based upon order of creation:

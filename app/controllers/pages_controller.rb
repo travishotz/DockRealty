@@ -19,4 +19,8 @@ class PagesController < ApplicationController
     @title = "History"
   end
   
+  def advertising
+    @title = "Advertising"
+  end
+  
 end

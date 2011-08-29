@@ -45,6 +45,7 @@ describe PagesController do
                                     :content  => @base_title + " | Contact")
     end
   end
+  
   describe "GET 'privacy'" do
     it "should be successful" do
       get 'privacy'
